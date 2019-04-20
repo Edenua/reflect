@@ -18,7 +18,7 @@ public class MethodTest {
         // 获得公有的方法
         Method method = class1.getMethod("eat");
         // 执行该方法:
-        method.invoke(person); // person.eat();
+        method.invoke(person); //person.eat();
     }
 
     @Test
@@ -46,7 +46,8 @@ public class MethodTest {
         // 设置访问权限:
         method.setAccessible(true);
         // 执行:
-        Object obj = method.invoke(person, "Tom");
+        Object obj =
+                method.invoke(person, "Tom");
         System.out.println(obj);
     }
 }

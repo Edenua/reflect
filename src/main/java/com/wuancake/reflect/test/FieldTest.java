@@ -22,6 +22,7 @@ public class FieldTest {
 
         Object obj = field.get(p);
         System.out.println(obj);
+        System.out.println(p);
 
     }
 
